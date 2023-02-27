@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpowerID.EmployeeManagement", "EmpowerID\EmpowerID.EmployeeManagement.csproj", "{92E93EFF-E110-43CC-9D59-CCF51A2DE167}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpowerID.Api.Tests", "EmpowerID.Api.Tests\EmpowerID.Api.Tests.csproj", "{9E1631AA-DBA5-4977-B9E7-8C1829CB781D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E93EFF-E110-43CC-9D59-CCF51A2DE167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E93EFF-E110-43CC-9D59-CCF51A2DE167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E93EFF-E110-43CC-9D59-CCF51A2DE167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E93EFF-E110-43CC-9D59-CCF51A2DE167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1631AA-DBA5-4977-B9E7-8C1829CB781D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1631AA-DBA5-4977-B9E7-8C1829CB781D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1631AA-DBA5-4977-B9E7-8C1829CB781D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1631AA-DBA5-4977-B9E7-8C1829CB781D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AB856EB-11FD-45D6-86C3-46F4E26C6249}
+	EndGlobalSection
+EndGlobal
