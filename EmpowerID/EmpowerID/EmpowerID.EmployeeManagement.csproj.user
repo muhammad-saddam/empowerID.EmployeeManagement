@@ -13,5 +13,6 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>EmpowerID.Context.EmployeesDbContext</WebStackScaffolding_DbContextTypeFullName>
+    <NameOfLastUsedPublishProfile>D:\EmpowerID\EmployeeManagementSystem\EmpowerID\EmpowerID\Properties\PublishProfiles\EmpowerIDEmployeeManagement20230228001905 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
