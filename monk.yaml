@@ -1,0 +1,62 @@
+namespace: empowerID.EmployeeManagement
+
+empowerid-employee-management:
+  defines: runnable
+  metadata:
+    name: empowerid-employee-management
+    description: >-
+      Back-end service for managing employees, using an in-memory database and
+      structured as a web application with MVC pattern.
+    icon: https://emojiapi.dev/api/v1/robot.svg
+  containers:
+    empowerid-employee-management:
+      image: env-1924.registry.local/empowerid-employee-management:main-7417c6a
+      build: .
+      dockerfile: Dockerfile.empowerid-employee-management
+  services:
+    http-port:
+      description: HTTP port for web application
+      container: empowerid-employee-management
+      port: 5196
+      host-port: 5196
+      publish: true
+      protocol: tcp
+    https-port:
+      description: HTTPS port for web application
+      container: empowerid-employee-management
+      port: 7104
+      host-port: 7104
+      publish: true
+      protocol: tcp
+  connections: {}
+  variables:
+    logging--loglevel--default:
+      env: LOGGING__LOGLEVEL__DEFAULT
+      type: string
+      value: Information
+      description: Default logging level
+    logging--loglevel--microsoft-aspnetcore:
+      env: LOGGING__LOGLEVEL__MICROSOFT_ASPNETCORE
+      type: string
+      value: Warning
+      description: Logging level for Microsoft.AspNetCore
+    allowed-hosts:
+      env: ALLOWED_HOSTS
+      type: string
+      value: '*'
+      description: Hosts allowed to access this application
+    aspnetcore-urls:
+      env: ASPNETCORE_URLS
+      type: string
+      value: http://*:80;https://*:443
+      description: The URLS the web application is accessible at
+    app-base-url:
+      env: APP_BASE_URL
+      type: string
+      value: https://empoweridemployeemanagement20230228001905.azurewebsites.net
+      description: Base URL of the application
+
+stack:
+  defines: group
+  members:
+    - empowerID.EmployeeManagement/empowerid-employee-management
